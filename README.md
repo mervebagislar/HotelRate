@@ -1,0 +1,1 @@
+Asp.net core mvc modeli C# diliyle yaptığımız dinamik bir otel anket web sitesi projesidir. Projede 12 otel ve otellerin ayrı anket soruları vardır. En son kısımda istatistik bölümü yer almaktadır. İstatistik kısmında belirlenen 7 konuya göre değerlendirme yapılmaktadır.
