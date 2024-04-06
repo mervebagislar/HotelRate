@@ -1,0 +1,114 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Tuple<HotelRate2.Models.Otel,List<HotelRate2.Models.Soru>> 
+   
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int sayac = 0;
+}
+<div class="page-header d-flex align-items-center">
+    <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+                <h2>@Model.Item1.OtelAdi</h2>
+                <p>Merhaba HotelRate'e hoş geldiniz... @Model.Item1.OtelAdi'da konaklama deneyimlerinizi aşağıdaki anket sorularını cevaplayarak oteli değerlendirebilirsiniz.</p>
+                <a class="cta-btn" href="#survey1">Hemen Başla</a>
+            </div>
+        </div>
+    </div>
+</div><!-- End Page Header -->
+<div class="card bg-success text-white  m-5">
+    <div class="card-body text-center">
+        <a href="https://www.bandirmapalas.com/" target="_blank" class="text-white">
+            <h5 class="card-title ">@Model.Item1.OtelAdi SAYFASINA GİTMEK İÇİN TIKLAYINIZ.</h5>
+            <p class="card-text">Buradan daha fazla bilgi alabilirsiniz.</p>
+        </a>
+    </div>
+</div>
+<!-- ======= Gallery Single Section ======= -->
+<section id="gallery-single" class="gallery-single">
+    <div class="container">
+        <div class="position-relative h-100 p-3 ">
+            <div class="slides-1 portfolio-details-slider swiper w-40">
+                <div class="swiper-wrapper align-items-center">
+                    
+                    @foreach (var item in Model.Item1.OtelResimleri)
+                    {
+                        <div class="swiper-slide">
+                            <img src="/wwwroot/img/gallery/@item.OtelResimYolu" alt="">
+                        </div>
+                    }
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<form class="px-4" method="post" asp-action="HotelDetay" asp-route-id="@Model.Item1.OtelId">
+    <input type="hidden" asp-for="@Model.Item1.OtelId"  />
+    @for (int i = 0; i < Model.Item2.Count; i++)
+    {
+        <div class="mx-0 mx-sm-auto  ">
+            <div class="card ">
+                <div class="card-body">
+                    <div class="px-4">
+                        <p>
+                            <strong>Soru @(i+1)</strong>
+                        </p>
+                        <p>
+                            @Model.Item2[i].SoruMetni
+                            <input type="hidden" asp-for="@Model.Item2[i].SoruId" />
+                           
+                        </p>
+                    </div>
+                    <hr />
+                        <p><strong>Yanıtınız</strong></p>
+                        <div class="form-check mb-2">
+                        
+                        <input class="form-check-input" type="radio"  value="5" name="SoruId_@Model.Item2[i].SoruId"  />
+                            <label class="form-check-label" for="radio21">
+                                Mükemmel
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" value="4" name="SoruId_@Model.Item2[i].SoruId"  />
+                            <label class="form-check-label" for="radio22">
+                                İyi
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" value="3" name="SoruId_@Model.Item2[i].SoruId" />
+                            <label class="form-check-label" for="radio23">
+                                Orta
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" value="2" name="SoruId_@Model.Item2[i].SoruId"/>
+                            <label class="form-check-label" for="radio24">
+                                Yetersiz
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" value="1" name="SoruId_@Model.Item2[i].SoruId" />
+                            <label class="form-check-label" for="radio25">
+                                Çok Kötü
+                            </label>
+                        </div>
+                   
+                </div>
+            </div>
+        </div>
+    }
+  
+    <a asp-controller="Check" asp-action="Kontrol"  asp-route-id="@Model.Item1.OtelId" >
+    <input type="submit" class="btn btn-success text-center col-lg-12 p-3 " value="Anketi kaydet" />
+    </a>
+
+</form>
+
+
+
+
+

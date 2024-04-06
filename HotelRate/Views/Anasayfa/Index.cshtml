@@ -1,0 +1,115 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<HotelRate2.Models.Otel>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>HotelRate</title>
+    <meta content="Site açıklaması" name="description">
+    <meta content="Anahtar kelimeler girilecek" name="keywords">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Favicons -->
+    <link href="/wwwroot/img/bannerIcon.png" rel="icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Vendor -->
+    <link href="/wwwroot/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/wwwroot/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/wwwroot/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/wwwroot/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/wwwroot/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="/wwwroot/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+                <img src="//wwwroot/img/bannerIcon.png" alt="">
+                <h1>HotelRate</h1>
+            </a>
+            <nav id="navbar" class="navbar px-4">
+                <ul>
+                    <li><a asp-controller="Anasayfa" asp-action="Index">Anasayfa</a></li>
+                    <li><a asp-controller="Istatistik" asp-action="Index">İstatistik</a></li>
+                    <li><a asp-controller="Iletisim" asp-action="Index">İletişim</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+    </header><!-- End Header -->
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+        <!-- ======= End Page Header ======= -->
+        <div class="page-header d-flex align-items-center">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>Otel Seç ve Oyla !</h2>
+                        <p>
+                            Sizin deneyiminiz başkalarının rehberi olabilir! Şimdi dilediğiniz oteli seçerek anketimize başlayın ve topluluğumuzun bir parçası olun. Teşekkür ederiz!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Page Header -->
+        <!-- ======= Gallery Section ======= -->
+        <section id="gallery" class="gallery">
+            <div class="container-fluid text-center">
+                <div class="row gy-4 justify-content-center text-center">
+                   
+                    
+            @foreach (var item in Model)
+            {
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <strong>@item.OtelAdi</strong>
+                    <div class="gallery-item h-100">
+                        @if (item.resim != null)
+                        {
+                            <img src="/wwwroot/img/gallery/@item.resim" class="img-fluid" alt="">
+                        }
+                        else
+                        {
+                            <span>Resim yok</span>
+                        }
+                        <div class="gallery-links d-flex align-items-center justify-content-center text-center">
+                            <a asp-controller="OtelAnket" asp-action="HotelDetay" asp-route-id="@item.OtelId"><strong>Ankete Katıl</strong></a>
+                        </div>
+                    </div>
+                </div>
+            }
+                </div>
+            </div>
+        </section>
+        <!-- End Gallery Section -->
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>HotelRate</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by HotelRate
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader">
+        <div class="line"></div>
+    </div>
+    <!-- Vendor JS Files -->
+    <script src="/wwwroot/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/wwwroot/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/wwwroot/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/wwwroot/vendor/aos/aos.js"></script>
+    <script src="/wwwroot/vendor/php-email-form/validate.js"></script>
+    <!-- Template Main JS File -->
+    <script src="/wwwroot/js/main.js"></script>
+</body>
+</html>

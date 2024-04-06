@@ -1,0 +1,1316 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>HotelRate</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="wwwroot/img/bannerIcon.png" rel="icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="wwwroot/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="wwwroot/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="wwwroot/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="wwwroot/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="wwwroot/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="wwwroot/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+                <img src="/wwwroot/img/bannerIcon.png" alt="">
+                <h1>HotelRate</h1>
+            </a>
+            <nav id="navbar" class="navbar px-4">
+                <ul>
+                    
+                    <li><a asp-controller="Anasayfa" asp-action="Index">Anasayfa</a></li>
+                    <li><a asp-controller="Istatistik" asp-action="Index">İstatistik</a></li>
+                    <li><a asp-controller="Iletisim" asp-action="Index">İletişim</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+    </header>
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+        <div class="page-header d-flex align-items-center">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>İstatistikler</h2>
+                        <p>Açıklama yazılacak</p>
+                        <img src="/wwwroot/img/gallery/starrate1.gif" class="img-fluid  w-50 " alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--açıklama-->
+        <!--ratingstars-->
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://grandasyahotel.com/" class="text-white" target="_blank">
+                        <h4>Grandasya Hotel</h4>
+                    </a>
+
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://www.kempinski.com/tr/ciragan-palace" class="text-white" target="_blank">
+                        <h4>Çırağan Palace Hotel</h4>
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://www.fourseasons.com/tr/bosphorus/?ysclid=loxa2q21t1645245512" class="text-white" target="_blank">
+                        <h4>Four Seasons Hotel</h4>
+                    </a>
+
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="http://www.ramadahotelmerter.com/" class="text-white" target="_blank">
+                        <h4>Ramada Hotel</h4>
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://www.radissonhotels.com/tr-tr/" class="text-white" target="_blank">
+                        <h4>Radisson Blu Hotel</h4>
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://www.rafflesistanbul.com/tr/" class="text-white" target="_blank">
+                        <h4>Raffles Hotel</h4>
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://www.hilton.com.tr/" class="text-white" target="_blank">
+                        <h4>Hilton İstanbul Hotel</h4>
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://www.swissotelthebosphorus.com/tr/" class="text-white" target="_blank">
+                        <h4>Swissotel</h4>
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://www.bandirmapalas.com/" class="text-white" target="_blank">
+                        <h4>Palas Bandırma Hotel</h4>
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://www.bandirmapalas.com/" class="text-white" target="_blank">
+                        <h4>
+                            The Marmara Taksim Hotel
+                        </h4>
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://www.sheratonankarahotel.com/" class="text-white" target="_blank">
+                        <h4>Sheraton Hotel</h4>
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 mb-4">
+                <div class="card p-3 text-center ">
+                    <hr>
+                    <a href="https://www.eliteworldhotels.com.tr/oteller/elite-world-grand-sapanca" class="text-white" target="_blank">
+                        <h4>Elite World Grand Sapanca Hotel</h4>
+                    </a>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                        <h5 class="review-count  ">12 Oylama</h5>
+                    </div>
+
+
+                    <div class="mt-5 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Güvenlik</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Fiyatlar</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Otel Konumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Yemek Kalitesi</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Oda Temizliği</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Personel Hizmeti</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-between align-items-center">
+                        <h5 class="review-stat">Tesislerin Genel Durumu</h5>
+                        <div class="small-ratings">
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-fill text-success"></i>
+                            <i class="bi bi-star-half text-success"></i>
+                            <i class="bi bi-star text-success"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+    <!-- End Header -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>HotelRate</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="">Ekip Adı</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader">
+        <div class="line"></div>
+    </div>
+    <!-- Vendor JS Files -->
+    <script src="wwwroot/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="wwwroot/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="wwwroot/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="wwwroot/vendor/aos/aos.js"></script>
+    <script src="wwwroot/vendor/php-email-form/validate.js"></script>
+    <!-- Template Main JS File -->
+    <script src="wwwroot/js/main.js"></script>
+</body>
+</html>
