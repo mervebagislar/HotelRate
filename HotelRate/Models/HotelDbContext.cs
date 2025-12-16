@@ -36,4 +36,6 @@ public partial class HotelDbContext : DbContext
             throw;
         }
     }
+   
+
 }
