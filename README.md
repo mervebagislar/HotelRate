@@ -188,42 +188,42 @@ HotelRate/
 ## 📸 Ekran Görüntüleri
 
 ### Giriş Sayfası
-![Giriş Sayfası]![HotelRate Banner](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/login.png)
+![Giriş Sayfası](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/login.png)
 
 *Kullanıcı giriş ekranı*
 
 ### Anasayfa
-![Anasayfa](img/screenshots/mainpage.png)
+![Anasayfa]([img/screenshots/](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/mainpage.png)
 *Otel listesi ve resim galerisi*
 
-![Anasayfa Detay](img/screenshots/mainpage2.png)
+![Anasayfa Detay](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/mainpage2.png)
 *Otel kartları ve navigasyon*
 
 ### Anket Sayfaları
-![Anket 1](img/screenshots/anket1.png)
+![Anket 1](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/anket1.png)
 *Otel detay sayfası - Swiper.js ile resim galerisi*
 
-![Anket 2](img/screenshots/anket2.png)
+![Anket 2](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/anket2.png)
 *Anket soruları ve değerlendirme formu*
 
-![Anket 3](img/screenshots/anket3.png)
+![Anket 3](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/anket3.png)
 *Anket tamamlama ekranı*
 
-![Anket Kontrol](img/screenshots/anketcheck.png)
+![Anket Kontrol](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/anketcheck.png)
 *Anket cevaplarının kontrolü*
 
 ### İstatistik Sayfası
-![İstatistikler](img/screenshots/istatistik.png)
+![İstatistikler](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/istatistik.png)
 *Genel istatistik görünümü*
 
-![İstatistik Detay 1](img/screenshots/istatistikdetay.png)
+![İstatistik Detay 1](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/istatistikdetay.png)
 *Detaylı istatistikler ve grafikler*
 
-![İstatistik Detay 2](img/screenshots/istatistikdetay2.png)
+![İstatistik Detay 2](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/istatistikdetay2.png)
 *Chart.js ile cevap dağılım grafikleri*
 
 ### İletişim Sayfası
-![İletişim](img/screenshots/contact.png)
+![İletişim](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/contact.png)
 *İletişim formu ve bilgileri*
 
 ## 🎯 Özellik Detayları
