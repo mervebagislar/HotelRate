@@ -4,6 +4,8 @@ ASP.NET Core MVC ile geliştirilmiş dinamik otel anket ve değerlendirme web uy
 
 ![HotelRate Banner](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/bannerIcon.png)
 
+
+
 ## 📋 İçindekiler
 
 - [Özellikler](#-özellikler)
