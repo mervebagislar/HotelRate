@@ -150,6 +150,33 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
+   * Init portfolio details slider (otel resimleri için)
+   */
+  const portfolioDetailsSlider = document.querySelector('.portfolio-details-slider');
+  if (portfolioDetailsSlider) {
+    const slides = portfolioDetailsSlider.querySelectorAll('.swiper-slide');
+    const hasMultipleSlides = slides.length > 1;
+    
+    new Swiper('.portfolio-details-slider', {
+      speed: 600,
+      loop: hasMultipleSlides,
+      autoplay: hasMultipleSlides ? {
+        delay: 5000,
+        disableOnInteraction: false
+      } : false,
+      pagination: {
+        el: portfolioDetailsSlider.querySelector('.swiper-pagination'),
+        type: 'bullets',
+        clickable: true
+      },
+      navigation: {
+        nextEl: portfolioDetailsSlider.querySelector('.swiper-button-next'),
+        prevEl: portfolioDetailsSlider.querySelector('.swiper-button-prev'),
+      }
+    });
+  }
+
+  /**
    * Animation on scroll function and init
    */
   function aos_init() {

@@ -4,6 +4,7 @@
     {
         public int OtelResimId { get; set; }
 
+        public int OtelId { get; set; }
         public Otel Otel { get; set; }
 
         public string OtelResimYolu { get; set; }

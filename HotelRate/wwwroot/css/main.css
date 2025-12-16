@@ -777,7 +777,7 @@ color:#cecece;
   margin-top: 40px;
 }
 .contact {
-background: url(/assets/img/1645265729_67-phonoteka-org-p-biznes-temnii-fon-68.jpg);
+background: url(/img/1645265729_67-phonoteka-org-p-biznes-temnii-fon-68.jpg);
 background-size: cover;
 
 background: repeating-linear-gradient( black, rgba(255, 255, 255, 0.37), black);
@@ -915,7 +915,7 @@ background: repeating-linear-gradient( black, rgba(255, 255, 255, 0.37), black);
 .hero {
   width: 100%;
   min-height: 30vh;
-  background: url(/assets/img/wallpaperflare.com_wallpaper.jpg);
+  background: url(/img/wallpaperflare.com_wallpaper.jpg);
   background-size: cover;
   position: relative;
   padding: 140px 0 60px 0;

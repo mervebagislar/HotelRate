@@ -4,37 +4,40 @@
 @{
     int sayac = 0;
 }
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HotelRate-Survey</title>
-    <meta content="siteacıkla" name="description">
-    <meta content="anahtar kelime gir" name="keywords">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
+
     <!-- Favicons -->
-    <link href="/wwwroot/img/bannerIcon.png" rel="icon">
+    <link href="/img/bannerIcon.png" rel="icon">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Vendor  -->
-    <link href="/wwwroot/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/wwwroot/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="/wwwroot/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="/wwwroot/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="/wwwroot/vendor/aos/aos.css" rel="stylesheet">
-    <!-- Template Main CSS File -->
-    <link href="/wwwroot/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Inter&family=Cardo&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="/css/main.css" rel="stylesheet">
 </head>
+
 <body>
+
     <!-- ======= Header ======= -->
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
-                <img src="//wwwroot/img/bannerIcon.png" alt="">
+            <a asp-controller="Anasayfa" asp-action="Index" class="logo d-flex align-items-center me-auto me-lg-0">
+                <img src="/img/bannerIcon.png" alt="">
                 <h1>HotelRate</h1>
             </a>
             <nav id="navbar" class="navbar px-4">
@@ -42,70 +45,74 @@
                     <li><a asp-controller="Anasayfa" asp-action="Index">Anasayfa</a></li>
                     <li><a asp-controller="Iletisim" asp-action="Index">İletişim</a></li>
                 </ul>
-            </nav><!-- .navbar -->
+            </nav>
         </div>
-    </header><!-- End Header -->
-    <main id="main" data-aos="fade" data-aos-delay="1500">
-        <!-- ======= End Page Header ======= -->
-        <div class="page-header d-flex align-items-center">
+    </header>
+    <!-- End Header -->
 
-            @for (int i = 0; i < Model.Count; i++)
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+
+        <div class="page-header d-flex align-items-center">
+            @foreach (var otel in Model)
             {
                 <div class="container position-relative">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-6 text-center">
-                            <h2>@Model[i].OtelAdi</h2>
-                            <p class="text-success">Anketiniz Başarılı Bir Şekilde Tamamlanmıştır</p>
-                            <img id="greenTick" src="//wwwroot/img/gallery/green-tick.gif" class="img-fluid " alt="">
+                            <h2>@otel.OtelAdi</h2>
+                            <p class="text-success">Anketiniz başarıyla tamamlanmıştır 🎉</p>
+                            <img src="/img/gallery/green-tick.gif" class="img-fluid" alt="Başarılı">
                         </div>
                     </div>
                 </div>
-
             }
-        </div><!-- End Page Header -->
+        </div>
+
         <div class="row align-items-center justify-content-center">
             <div class="card bg-success text-white col-lg-5 m-3 p-2">
                 <div class="card-body text-center">
-                    <a asp-controller="Anasayfa" asp-action="Index">
-                        <h5 class="card-title ">Ana Sayfaya dönmek için tıklayınız.</h5>
+                    <a asp-controller="Anasayfa" asp-action="Index" class="text-white">
+                        <h5 class="card-title">Ana Sayfaya dönmek için tıklayınız</h5>
                     </a>
-                   
                 </div>
             </div>
-            <div class="card bg-dark text-white col-lg-5 m-3 p-2 ">
-                <div class="card-body text-center">
 
-                    <a asp-controller="Istatistik" asp-action="Index">
-                        <h5 class="card-title ">Otel İstatistikleri İçin Tıklayınız.</h5>
+            <div class="card bg-dark text-white col-lg-5 m-3 p-2">
+                <div class="card-body text-center">
+                    <a asp-controller="Istatistik" asp-action="Index" class="text-white">
+                        <h5 class="card-title">Otel İstatistikleri için tıklayınız</h5>
                     </a>
                 </div>
             </div>
         </div>
-        <!-- ======= Gallery Single Section ======= -->
-    </main><!-- End #main -->
+
+    </main>
+
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>HotelRate</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                Designed by HotelRate</>
+                &copy; HotelRate. All Rights Reserved
             </div>
         </div>
     </footer>
-    <!-- End Footer -->
-    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
     <div id="preloader">
         <div class="line"></div>
     </div>
-    <!-- Vendor JS Files -->
-    <script src="/wwwroot/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/wwwroot/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="/wwwroot/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="/wwwroot/vendor/aos/aos.js"></script>
-    <script src="/wwwroot/vendor/php-email-form/validate.js"></script>
-    <!-- Template Main JS File -->
-    <script src="/wwwroot/js/main.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/vendor/aos/aos.js"></script>
+    <script src="/vendor/php-email-form/validate.js"></script>
+
+    <!-- Main JS -->
+    <script src="/js/main.js"></script>
+
 </body>
 </html>
