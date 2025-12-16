@@ -188,7 +188,8 @@ HotelRate/
 ## 📸 Ekran Görüntüleri
 
 ### Giriş Sayfası
-![Giriş Sayfası](img/screenshots/login.png)
+![Giriş Sayfası]![HotelRate Banner](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/login.png)
+
 *Kullanıcı giriş ekranı*
 
 ### Anasayfa
