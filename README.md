@@ -275,7 +275,7 @@ app.UseSession();
 
 ## 📝 Lisans
 
-Bu proje eğitim amaçlı geliştirilmiştir.
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
 
 ## 👨‍💻 Geliştirici
 
