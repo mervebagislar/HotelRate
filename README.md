@@ -193,7 +193,7 @@ HotelRate/
 *Kullanıcı giriş ekranı*
 
 ### Anasayfa
-![Anasayfa]([img/screenshots/](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/mainpage.png)
+![Anasayfa](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/mainpage.png)
 *Otel listesi ve resim galerisi*
 
 ![Anasayfa Detay](https://raw.githubusercontent.com/mervebagislar/HotelRate/main/HotelRate/wwwroot/img/screenshots/mainpage2.png)
